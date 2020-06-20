@@ -170,13 +170,16 @@ function Pagos () {
           {order.items.map(item => renderItem(item))}
         </ItemsContainer>
 
-         {/*Adicionando os dados que faltavam no painél do administrador*/}
+        {/*Adicionando os dados que faltavam no painél do administrador*/}
 
         <span>
           <strong>Observações: </strong>
           {order.observations}<br></br>
         </span>
-       
+		<span>
+		<strong>Forma de Entrega: </strong>
+          {order.type}<br></br>
+        </span>
         <span>
           <strong>Endereço: </strong>
           {order.street + ' ' + order.number}<br></br>
@@ -195,6 +198,11 @@ function Pagos () {
         <span>
 		<strong>Forma de Pagamento: </strong>
           {order.pagamento}<br></br>
+        </span>
+
+		<span>
+		<strong>Telemóvel: </strong>
+          {order.cel}<br></br>
         </span>
       </OrderCard>
     ) : null
