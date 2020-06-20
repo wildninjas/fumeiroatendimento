@@ -110,7 +110,7 @@ function Pagos () {
   function renderFilters () {
     return (
       <Filters>
-		 <h1>Pagos</h1>
+		{/*} <h1>Pagos</h1>
         {Object.keys(filters).map(filter => (
           <a
             key={filter}
@@ -119,7 +119,7 @@ function Pagos () {
           >
             
 		  </a>
-        ))}
+		))}*/}
       </Filters>
     )
   }

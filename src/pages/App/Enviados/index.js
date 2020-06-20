@@ -110,7 +110,7 @@ function Enviados () {
   function renderFilters () {
     return (
 		<Filters>
-		<h1>Enviados</h1>
+		{/*<h1>Enviados</h1>
 	  {Object.keys(filters).map(filter => (
 		<div
 		  key={filter}
@@ -119,7 +119,7 @@ function Enviados () {
 		>
 		  {filter}
 		</div>
-	  ))}
+	  ))}*/}
 	</Filters>
     )
   }

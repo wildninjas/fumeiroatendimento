@@ -77,9 +77,9 @@ function App ({ history }) {
 		) : activePage === 'Enviados' ? (
 			<Enviados />
         ) : activePage === 'Finalizados' ? (
-          <Cancelados />
+          <Finalizados />
 		  ) : activePage === 'Cancelados' ? (
-			<Finalizados />
+			<Cancelados />
         ) : activePage === 'Suspensos' ? (
           <Suspensos />
         ) : null}

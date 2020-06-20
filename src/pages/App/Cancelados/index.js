@@ -110,7 +110,7 @@ function Cancelados () {
   function renderFilters () {
     return (
 		<Filters>
-		<h1>Cancelados</h1>
+		{/*<h1>Cancelados</h1>
 	  {Object.keys(filters).map(filter => (
 		<div
 		  key={filter}
@@ -119,7 +119,7 @@ function Cancelados () {
 		>
 		  {filter}
 		</div>
-	  ))}
+	  ))}*/}
 	</Filters>
     )
   }
@@ -176,7 +176,10 @@ function Cancelados () {
           <strong>Observações: </strong>
           {order.observations}<br></br>
         </span>
-       
+		<span>
+		<strong>Forma de Entrega: </strong>
+          {order.type}<br></br>
+        </span>
         <span>
           <strong>Endereço: </strong>
           {order.street + ' ' + order.number}<br></br>
@@ -195,6 +198,11 @@ function Cancelados () {
         <span>
 		<strong>Forma de Pagamento: </strong>
           {order.pagamento}<br></br>
+        </span>
+
+		<span>
+		<strong>Telemóvel: </strong>
+          {order.cel}<br></br>
         </span>
       </OrderCard>
     ) : null

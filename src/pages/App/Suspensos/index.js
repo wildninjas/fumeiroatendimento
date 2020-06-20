@@ -120,14 +120,14 @@ function Suspensos () {
 
   return (
     <Container>
-      <AddButton onClick={() => setModalOpen(true)} />
+      {/*<AddButton onClick={() => setModalOpen(true)} />
       {modalOpen && (
         <ProductModal
           closeModal={() => setModalOpen(false)}
           product={editProduct}
         />
-      )}
-      {products.map(product => renderProduct(product))}
+      )}*/}
+	  {products.map(product => renderProduct(product))}
     </Container>
   )
 }

@@ -112,7 +112,7 @@ function Pendentes () {
     return (
 		
       <Filters>
-		  <h1>Pendentes</h1>
+		 {/*} <h1>Pendentes</h1>
         {Object.keys(filters).map(filter => (
           <a
             key={filter}
@@ -121,7 +121,7 @@ function Pendentes () {
           >
             
 		  </a>
-        ))}
+		))}*/}
       </Filters>
     )
   }

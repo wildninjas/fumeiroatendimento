@@ -110,7 +110,7 @@ function Finalizados () {
   function renderFilters () {
     return (
 		<Filters>
-		<h1>Finalizados</h1>
+		<h1>Finalizados</h1>{/*
 	  {Object.keys(filters).map(filter => (
 		<div
 		  key={filter}
@@ -119,7 +119,7 @@ function Finalizados () {
 		>
 		  {filter}
 		</div>
-	  ))}
+	  ))}*/}
 	</Filters>
     )
   }
