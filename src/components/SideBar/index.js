@@ -33,50 +33,50 @@ function SideBar ({ page, changePage }) {
         className={page === 'Orders' ? 'active' : ''}
         onClick={() => changePage('Orders')} 
       >
-       <RoomServiceIcon style={{ fontSize: 40 }} /><br/> Todos os Pedidos
+       <RoomServiceIcon style={{ fontSize: 35 }} /><br/> Todos os Pedidos
       </li>
       <li
         className={page === 'Pendentes' ? 'active' : ''}
         onClick={() => changePage('Pendentes')} 
       >
-        <ReportIcon style={{ fontSize: 40 }} /><br/>Pendentes
+        <ReportIcon style={{ fontSize: 35 }} /><br/>Pendentes
       </li>
      
       <li
         className={page === 'Pagos' ? 'active' : ''}
         onClick={() => changePage('Pagos')}
       >
-       <MonetizationOnIcon style={{ fontSize: 40 }} /><br/> Pagos
+       <MonetizationOnIcon style={{ fontSize: 35 }} /><br/> Pagos
       </li>
       <li
         className={page === 'Enviados' ? 'active' : ''}
         onClick={() => changePage('Enviados')}
       >
-       <MotorcycleIcon style={{ fontSize: 40 }} /><br/> Enviados
+       <MotorcycleIcon style={{ fontSize: 35 }} /><br/> Enviados
       </li>
 	  <li
         className={page === 'Finalizados' ? 'active' : ''}
         onClick={() => changePage('Finalizados')}
       >
-       <AssignmentTurnedInIcon style={{ fontSize: 40 }} /><br/> Finalizados
+       <AssignmentTurnedInIcon style={{ fontSize: 35 }} /><br/> Finalizados
       </li>
 	  <li
         className={page === 'Cancelados' ? 'active' : ''}
         onClick={() => changePage('Cancelados')}
       >
-       <CancelIcon style={{ fontSize: 40 }} /><br/> Cancelados
+       <CancelIcon style={{ fontSize: 35 }} /><br/> Cancelados
       </li>
 	  <li
         className={page === 'Suspensos' ? 'active' : ''}
         onClick={() => changePage('Suspensos')}
       >
-       <PauseCircleFilledIcon style={{ fontSize: 40 }} /><br/> Produtos Suspensos
+       <PauseCircleFilledIcon style={{ fontSize: 35 }} /><br/> Produtos Suspensos
       </li>
 	  <li
-        
+        className={''}
         onClick={handleLogout}
       >
-       <ExitToAppIcon style={{ fontSize: 40 }} /><br/> Sair
+       <ExitToAppIcon style={{ fontSize: 35 }} /><br/> Sair
       </li>
 
     </Container>

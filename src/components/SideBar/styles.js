@@ -12,7 +12,7 @@ export default styled.ul`
     color: #fff;
     cursor: pointer;
 	text-align: center;
-    padding: 5px 10px;
+    padding: 3px 10px;
     border-bottom: 1px solid #4f1913;
     border-top: 1px solid transparent;
     transition: all 0.3s;
