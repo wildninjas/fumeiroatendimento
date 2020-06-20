@@ -5,6 +5,8 @@ import Container from './styles'
 import RestaurantIcon from '@material-ui/icons/Restaurant';
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
+
+
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import RoomServiceIcon from '@material-ui/icons/RoomService';
 
@@ -14,7 +16,14 @@ import MotorcycleIcon from '@material-ui/icons/Motorcycle';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import CancelIcon from '@material-ui/icons/Cancel';
 import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
+function handleLogout () {
+	logout();
+	
+	toast.error("Logout Realizado, realize login para continuar.");
+	window.location.reload(false);
+  }
 
 function SideBar ({ page, changePage }) {
   return (
@@ -62,6 +71,13 @@ function SideBar ({ page, changePage }) {
       >
        <PauseCircleFilledIcon style={{ fontSize: 40 }} /><br/> Produtos Suspensos
       </li>
+	  <li
+        
+        onClick={handleLogout}
+      >
+       <ExitToAppIcon style={{ fontSize: 40 }} /><br/> Sair
+      </li>
+
     </Container>
   )
 }

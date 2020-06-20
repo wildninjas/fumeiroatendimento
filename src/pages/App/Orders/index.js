@@ -194,6 +194,11 @@ function Orders () {
 		<strong>Forma de Pagamento: </strong>
           {order.pagamento}<br></br>
         </span>
+
+		<span>
+		<strong>Telemóvel: </strong>
+          {order.cel}<br></br>
+        </span>
       </OrderCard>
     ) : null
   }
@@ -206,7 +211,9 @@ function Orders () {
             item.product.image
               ? item.product.image.url
               : NoImage
-          }
+		  }
+		 
+
         />
         <div>
           <span>{item.product.name}</span>
