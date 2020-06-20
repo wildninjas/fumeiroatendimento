@@ -109,7 +109,7 @@ function Orders () {
   function renderFilters () {
     return (
       <Filters>
-        {Object.keys(filters).map(filter => (
+     {/*}   {Object.keys(filters).map(filter => (
           <div
             key={filter}
             onClick={() => dispatch({ type: filter })}
@@ -117,7 +117,7 @@ function Orders () {
           >
             {filter}
           </div>
-        ))}
+	 ))}*/}
       </Filters>
     )
   }
